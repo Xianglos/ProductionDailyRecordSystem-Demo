@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data:; img-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'none'" />
+  <title>生产日报系统</title>
+  <link rel="stylesheet" href="./css/app.css" />
+</head>
+<body>
+  <!-- 登录页 -->
+  <div id="login-view" class="login-view">
+    <div class="login-card">
+      <div class="login-brand">
+        <h1>生产日报系统</h1>
+        <span class="tag">示例系统</span>
+      </div>
+      <p class="login-sub">车间生产过程数据记录 · 当日填报 · 超限预警 · 历史追溯 · 统计看板</p>
+      <form id="login-form" autocomplete="off">
+        <label class="field"><span>账号</span><input type="text" id="login-account" maxlength="50" placeholder="请输入账号" /></label>
+        <label class="field"><span>密码</span><input type="password" id="login-password" maxlength="32" placeholder="请输入密码" /></label>
+        <label class="checkbox"><input type="checkbox" id="login-remember" /> <span>记住账号（7 天内免重复登录）</span></label>
+        <div id="login-error" class="form-error"></div>
+        <button type="submit" id="login-submit" class="btn btn-primary btn-block">登 录</button>
+      </form>
+      <div class="login-hint">演示账号：admin / leader / qa / operator　　初始密码：123456</div>
+    </div>
+  </div>
+
+  <!-- 主界面 -->
+  <div id="app-view" class="app-view hidden">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-name">生产日报系统</span>
+        <span class="tag">示例系统</span>
+      </div>
+      <nav id="main-nav" class="main-nav"></nav>
+      <div class="sidebar-section">
+        <div class="sidebar-title">报告库（按年月分组）</div>
+        <div id="report-tree" class="report-tree"></div>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div id="view-title" class="view-title">日报填报</div>
+        <div class="topbar-right">
+          <span id="user-chip" class="user-chip"></span>
+          <button id="btn-change-pwd" class="btn btn-ghost btn-sm">修改密码</button>
+          <button id="btn-logout" class="btn btn-ghost btn-sm">退出登录</button>
+        </div>
+      </header>
+      <section id="content" class="content"></section>
+    </main>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toast-root" class="toast-root"></div>
+
+  <script src="./js/api.js"></script>
+  <script src="./js/util.js"></script>
+  <script src="./js/charts.js"></script>
+  <script src="./js/pages/login.js"></script>
+  <script src="./js/pages/report.js"></script>
+  <script src="./js/pages/stats.js"></script>
+  <script src="./js/pages/system.js"></script>
+  <script src="./js/pages/audit.js"></script>
+  <script src="./js/router.js"></script>
+</body>
+</html>

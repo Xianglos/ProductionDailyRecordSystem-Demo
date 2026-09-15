@@ -1,0 +1,7 @@
+﻿"id","account","name","password_hash","role","phone","status","deleted","created_at","updated_at"
+"8f85e8fd-e567-4f30-8254-c3de686db3c3","admin","张伟","$2a$10$lxr11M5gTSnhIEQFoVW4ruvW4cog1KknBghQF7ihuH.Dliwg2uhfq","ADMIN","13800000001","1","0","2026-09-13 16:48:42","2026-09-13 16:48:42"
+"5b68484f-212b-4b7f-b093-49da0954503d","leader","李强","$2a$10$ZoO06cgrwe0WUxBY/F9oBulTN74d76GFGyjF9AVsl/ieFE2G1YlNq","LEADER","13800000002","1","0","2026-09-13 16:48:42","2026-09-13 16:48:42"
+"467cbe87-10d2-4240-85fe-dd1fe23cf178","qa","王敏","$2a$10$b0LhSHZfrPnz2gjluBuOoeUD69HPLS56ZUOYMKqfknrNN2nqvuOLe","QA","13800000003","1","0","2026-09-13 16:48:42","2026-09-13 16:48:42"
+"2b8c36d5-a634-4712-90d1-4e7fafaee95b","operator","赵磊","$2a$10$GaYjsEvQVIj0k7af9DYCr..bhxSrU5MdFvuceDRJh0JxhLaPbruIO","OPERATOR","13800000004","1","0","2026-09-13 16:48:42","2026-09-13 16:48:42"
+"aa374ddd-3805-4e60-998f-23e45f22e84c","operator2","陈晨","$2a$10$QuHMdygadb58R8ZcTgb4huS2n5GJPIfzWngQLdn.CtRTd/iHpOqvO","OPERATOR","13800000005","1","0","2026-09-13 16:48:42","2026-09-13 16:48:42"
+"05264870-ec52-47de-aee4-8a616fb44296","operator3","刘洋","$2a$10$zSd9rYLSF6s.ERLjqm5srOZw/x.zvK98rdPvHnmVwgFWR5o0ZLvjC","OPERATOR","13800000006","1","0","2026-09-13 16:48:42","2026-09-13 16:48:42"

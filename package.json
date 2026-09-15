@@ -1,0 +1,42 @@
+{
+  "name": "pdr-desktop",
+  "version": "1.0.0",
+  "description": "生产日报系统（PDR）—— Node.js + WebView2 单一 Windows 窗口程序",
+  "main": "main.js",
+  "bin": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "node main.js",
+    "start:devtools": "cross-env PDR_DEVTOOLS=1 node main.js",
+    "check": "node scripts/check.js",
+    "build": "pkg . --targets node22-win-x64 --output dist/PdrDesktop.exe",
+    "build:sea": "webview build --out dist"
+  },
+  "pkg": {
+    "scripts": [
+      "main.js",
+      "src/**/*.js"
+    ],
+    "assets": [
+      "ui/**/*"
+    ],
+    "outputPath": "dist"
+  },
+  "dependencies": {
+    "@webviewjs/webview": "^0.4.5",
+    "bcryptjs": "^2.4.3",
+    "csv-parse": "^5.5.6",
+    "csv-stringify": "^6.5.1",
+    "exceljs": "^4.4.0",
+    "pdfkit": "^0.15.0"
+  },
+  "devDependencies": {
+    "@yao-pkg/pkg": "^5.12.1"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "os": [
+    "win32"
+  ]
+}
